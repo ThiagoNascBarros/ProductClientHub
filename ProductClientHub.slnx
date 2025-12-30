@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ProductClientHub.API/ProductClientHub.API.csproj" />
+    <Project Path="src/ProductClientHub.Application/ProductClientHub.Application.csproj" />
+    <Project Path="src/ProductClientHub.Communication/ProductClientHub.Communication.csproj" />
+    <Project Path="src/ProductClientHub.Domain/ProductClientHub.Domain.csproj" />
+    <Project Path="src/ProductClientHub.Exception/ProductClientHub.Exception.csproj" />
+    <Project Path="src/ProductClientHub.Infrastructure/ProductClientHub.Infrastructure.csproj" />
+  </Folder>
+</Solution>
