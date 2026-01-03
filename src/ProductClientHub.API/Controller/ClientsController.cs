@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ProductClientHub.Communication.Requests;
 
 namespace ProductClientHub.API.Controller
 {
@@ -7,7 +8,7 @@ namespace ProductClientHub.API.Controller
     public class ClientsController : ControllerBase
     {
         [HttpPost]
-        public async Task<IActionResult> Register()
+        public async Task<IActionResult> Register([FromBody] RequestClientJson request)
         {
             return Ok();
         }
@@ -20,7 +21,7 @@ namespace ProductClientHub.API.Controller
 
         [HttpGet]
         [Route("{id}", Name = "Id of Client")]
-        public async Task<IActionResult> GetById(int id)
+        public async Task<IActionResult> GetById([FromRoute] Guid id)
         {
             return Ok();
         }
